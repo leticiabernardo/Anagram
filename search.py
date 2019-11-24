@@ -5,7 +5,7 @@ import utils.helpers as helpers
 class Search:
     def __init__(self):
         self.anagram = []
-        self.dictionary_name = "files/words_pt.txt"
+        self.dictionary_name = "files/words_en.txt"
         self.my_dictionary = self._load_dictionary()
 
     def _load_dictionary(self):
