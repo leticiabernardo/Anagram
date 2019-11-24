@@ -15,7 +15,7 @@ class Search:
         dict_all = file.read()
         file.close()
 
-        dict_all = dict_all.strip().split('\n')
+        dict_all = dict_all.lower().strip().split('\n')
 
         for i in range(len(dict_all)):
             if helpers.check_valid_word(dict_all[i]):
