@@ -1,5 +1,9 @@
-# Anagramas
-Digite um anagrama para encontrar palavras correspondentes na língua portuguesa.
+## Desafio
+
+Anagramas Um anagrama é uma palavra ou frase formada com o re-arranjo de todas as letras de uma outra palavra ou frase (sem sobra ou falta). Exemplos:
+- A palavra barco é um anagrama da palavra cobra (todas as letras de “cobra” usadas em “barco).
+- A palavra mar não é um anagrama da palavra roma (a letra “o” em “roma” não foi usada).
+- A palavra sal não é um anagrama da palavra mal (a letra “s” de “sal” não existe em “mal”).
 
 ------
 
@@ -7,17 +11,13 @@ Digite um anagrama para encontrar palavras correspondentes na língua portuguesa
 
 Busca | Resultados | Anagramas
 --------- | ------ | ------
-amor      | 5 anagramas | amor, moar, ramo, roma, romã
-cão       | 6 anagramas | aço, caó, cão, coã, oca, ocá
-coar      | 13 anagramas | acor, açor, ácor, acro, arco, caro, etc
-marco     | 7 anagramas | carmo, macro, macrô, marco, etc
-aleator   | 0 anagramas | Não foram encontrados anagramas correspondentes... 
+amor      | 5 anagramas | a, am, or, ramo, mao
+vermelho  | 6 anagramas | he, hee, heel, helm, holm, or
+alexa     | 3 anagramas | a, ale, alex
+oh        | 0 anagramas | Não foram encontrados anagramas correspondentes... 
 
 ------
 
 ### Contribuições
 
 Contribuições são sempre muito bem vindas!
-
-
-![](https://media0.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif)
