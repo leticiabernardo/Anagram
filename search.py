@@ -34,8 +34,13 @@ class Search:
         sorted_word = ''.join(sorted(helpers.clean_word(anagram)))
         start_time = datetime.datetime.now().time().strftime('%H:%M:%S.%f')
 
-        if sorted_word in self.my_dictionary.keys():
-            existing_anagrams = self.my_dictionary[sorted_word]
+        #if sorted_word in self.my_dictionary.keys():
+        #   existing_anagrams = self.my_dictionary[sorted_word]
+
+        for dict_item in self.my_dictionary.keys():
+            if dict_item in sorted_word:
+               #print(self.my_dictionary[dict_item])
+               existing_anagrams.append(self.my_dictionary[dict_item])
 
         end_time = datetime.datetime.now().time().strftime('%H:%M:%S.%f')
         total_time = (datetime.datetime.strptime(end_time, '%H:%M:%S.%f') -

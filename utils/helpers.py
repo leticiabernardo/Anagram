@@ -9,4 +9,4 @@ def clean_word(string):
 
 
 def check_valid_word(string):
-    return True if "-" not in string and not string[0].isupper() and " " not in string and len(string) > 2 else False
+    return True if "-" not in string and not string[0].isupper() and " " not in string and len(string) > 0 else False
