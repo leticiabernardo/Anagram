@@ -22,7 +22,7 @@ def main():
 
             if anagrams:
                 for x in range(len(anagrams)):
-                    print(anagrams[x])
+                    print(anagrams[x][0])
                 print("Foram encontrados: {} anagramas".format(len(anagrams)))
             else:
                 print("Não foram encontrados anagramas correspondentes...")

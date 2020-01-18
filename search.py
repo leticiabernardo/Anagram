@@ -5,7 +5,7 @@ import utils.helpers as helpers
 class Search:
     def __init__(self):
         self.anagram = []
-        self.dictionary_name = "files/words_pt.txt"
+        self.dictionary_name = "files/words_en.txt"
         self.my_dictionary = self._load_dictionary()
 
     def _load_dictionary(self):
@@ -15,7 +15,7 @@ class Search:
         dict_all = file.read()
         file.close()
 
-        dict_all = dict_all.strip().split('\n')
+        dict_all = dict_all.lower().strip().split('\n')
 
         for i in range(len(dict_all)):
             if helpers.check_valid_word(dict_all[i]):
@@ -34,8 +34,13 @@ class Search:
         sorted_word = ''.join(sorted(helpers.clean_word(anagram)))
         start_time = datetime.now().time().strftime('%H:%M:%S.%f')
 
-        if sorted_word in self.my_dictionary.keys():
-            existing_anagrams = self.my_dictionary[sorted_word]
+        #if sorted_word in self.my_dictionary.keys():
+        #   existing_anagrams = self.my_dictionary[sorted_word]
+
+        for dict_item in self.my_dictionary.keys():
+            if dict_item in sorted_word:
+               #print(self.my_dictionary[dict_item])
+               existing_anagrams.append(self.my_dictionary[dict_item])
 
         end_time = datetime.now().time().strftime('%H:%M:%S.%f')
         total_time = (datetime.strptime(end_time, '%H:%M:%S.%f') -
